@@ -5,11 +5,14 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+
+
 // import ProjectList from "./components/ProjectList"; // Uncomment if needed
 
 const Page: React.FC = () => {
   return (
     <div>
+      
       {/* Navbar */}
       <Navbar />
       
