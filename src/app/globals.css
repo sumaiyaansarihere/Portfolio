@@ -1,0 +1,265 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind config or custom styles */
+/* #hero {
+  background-color: orange;  /* Full-screen orange background */
+  /* height: 100vh;              Take full viewport height */
+/* } */
+
+/* .menuLink a {
+  color: rgb(107, 102, 102); 
+  font-weight: bold;
+} */
+
+/* .menuLink a:hover {
+  color: white;    
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */ 
+/* 
+html, body {
+  height: 100%; 
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+@media (max-width: 768px) {
+
+  #hero {
+    height: 80vh; 
+    padding: 1rem; 
+  } */
+
+  /* Mobile styling for menu links */
+  /* .menuLink a {
+    font-size: 1.2rem;  
+  }
+  
+
+  body {
+    font-size: 14px;
+  }
+} */
+
+/* Tablet-friendly adjustments (for screens between 768px and 1024px) */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  #hero {
+    height: 90vh; /* Adjust height for tablets */
+    /* padding: 1.5rem; Add more padding for better spacing */
+  /* } */
+/* } */
+/* 
+html {
+  scroll-behavior: smooth;
+} */
+
+/* Contact Form Section Styling */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind config or custom styles */
+#hero {
+  background-color: orange; /* Full-screen orange background */
+  height: 100vh; /* Take full viewport height */
+  animation: backgroundAnimation 10s infinite alternate; /* Add animation to background */
+}
+
+/* Hero section background animation */
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #FF5733; /* Orange */
+  }
+  50% {
+    background-color: #FF8C00; /* Dark Orange */
+  }
+  100% {
+    background-color: #FFA500; /* Yellow */
+  }
+}
+
+.menuLink a {
+  color: rgb(107, 102, 102); /* Default dark gray for menu links */
+  font-weight: bold;
+}
+
+.menuLink a:hover {
+  color: white; /* Change color to white when hovering */
+}
+
+/* Remove default margin and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%; /* Ensure full height for the body */
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  /* Adjust the hero section to be more mobile-friendly */
+  #hero {
+    height: 80vh; /* Adjust height for smaller screens */
+    padding: 1rem; /* Add padding for better spacing on mobile */
+  }
+
+  /* Mobile styling for menu links */
+  .menuLink a {
+    font-size: 1.2rem; /* Increase font size for better readability on mobile */
+  }
+
+  /* Make the body text size smaller on smaller screens */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Tablet-friendly adjustments (for screens between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero {
+    height: 90vh; /* Adjust height for tablets */
+    padding: 1.5rem; /* Add more padding for better spacing */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind base, components, and utilities */
+
+/* Custom Global Styles */
+
+/* Contact Form Section Styling */
+.contact-section {
+  padding: 2rem;
+  background-color: #f8f9fa; /* Light background for the contact section */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+/* Styling for the 'Connect with Me' heading */
+.connect-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FF5733; /* Orange color for the heading */
+  margin-bottom: 2rem;
+}
+
+/* Contact form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #FF5733; /* Focus color matching the hero orange */
+  outline: none;
+}
+
+/* Submit button styling */
+.contact-form button {
+  padding: 1rem;
+  background-color: #FF5733; /* Orange background */
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #FF8C00; /* Darker orange on hover */
+}
+
+/* Social Media Links Styling */
+.social-links {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(107, 102, 102);
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #FF5733; /* Hover color changes to hero orange */
+}
+
+.social-links .icon {
+  font-size: 2rem; /* Larger icon size */
+}
+
+/* Mobile-friendly Adjustments */
+@media (max-width: 768px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem; /* Smaller font size for mobile screens */
+  }
+
+  .contact-form button {
+    font-size: 1rem; /* Button font size adjustment */
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet Adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem; /* Adjust font size for tablets */
+  }
+
+  .social-links {
+    gap: 2rem;
+  }
+}
