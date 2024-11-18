@@ -1,20 +1,9 @@
 "use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import React from "react";
 
 const About: React.FC = () => {
-  // Initialize AOS for animations
-  useEffect(() => {
-    AOS.init({
-      duration: 1500,  // Duration of the fade-in
-      easing: 'ease-in-out',
-      once: true,  // Make sure it only triggers once
-    });
-  }, []);
-
   return (
-    <div id="ABOUT" className="min-h-screen bg-gray-700 text-orange-300 flex items-center justify-center" data-aos="fade-in">
+    <div id="ABOUT" className="min-h-screen bg-gray-700 text-orange-300 flex items-center justify-center">
       <div className="text-center px-8 py-16">
         {/* About Heading */}
         <h2 className="text-5xl font-bold text-white mb-8">About</h2>
