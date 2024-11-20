@@ -4,7 +4,7 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <div id="ABOUT" className="min-h-screen bg-gray-700 text-orange-300 flex items-center justify-center">
-      <div className="text-center px-8 py-16">
+      <div className="text-center px-8 py-16 md:pt-0 sm:pt-[500px] pt-[600px]">
         {/* About Heading */}
         <h2 className="text-5xl font-bold text-white mb-8">About</h2>
 
